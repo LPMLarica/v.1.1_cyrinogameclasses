@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e426a83503ee2be408bcd5e99c0986d6, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Faisca.GameConfig
+  levels:
+  - {fileID: 4900000, guid: b6e18ad2340fab34da8f46c83e362977, type: 3}
+  - {fileID: 4900000, guid: 0a2c3dcec49b0f14bb0bb31a02500c04, type: 3}
+  - {fileID: 4900000, guid: de5f4cbc1ce72234d83c043661d6e2b3, type: 3}
+  groundByMask:
+  - {fileID: 21300000, guid: 6a0c23f24cfdf8249b0abe1950211233, type: 3}
+  - {fileID: 21300000, guid: 3511f9a3f675c654b9d2502df2dd7198, type: 3}
+  - {fileID: 21300000, guid: 9f468700b80391d4cad7bc7218741ccd, type: 3}
+  - {fileID: 21300000, guid: abe65d5ac49818f45992626a46b807d3, type: 3}
+  - {fileID: 21300000, guid: d36daf231e396184d895203fd770c547, type: 3}
+  - {fileID: 21300000, guid: 5e4fb0954cb6b8941bb124a88cdbb1e4, type: 3}
+  - {fileID: 21300000, guid: 0d02b55853921e34ab8c8015b04e6b37, type: 3}
+  - {fileID: 21300000, guid: 230307575e50adf40981616f86118abe, type: 3}
+  metal: {fileID: 21300000, guid: cb80834d5bba417498b075f174e05829, type: 3}
+  insulator: {fileID: 21300000, guid: 115271f62a93cac43bf593ac86459337, type: 3}
+  oneWay: {fileID: 21300000, guid: e5b19df1bcc1aaa4185f74fba89d39df, type: 3}
+  playerPrefab: {fileID: 8935741647252219256, guid: fae6af277003ef044bee91a769e26f78, type: 3}
+  enemyPrefab: {fileID: 3619757241078308062, guid: bf1a20344c1704d41b952dd3e40df644, type: 3}
+  cellPrefab: {fileID: 1190586189846154024, guid: 708a1718dc729fd41a23f467fbdd33e8, type: 3}
+  spikesPrefab: {fileID: 6632437315216193454, guid: 5224c33a4a6ce7642b88d8e997c120ae, type: 3}
+  arcPrefab: {fileID: 3680892384137755108, guid: 6bc43f71d7974254a860f76338a34c93, type: 3}
+  checkpointPrefab: {fileID: 3281784558190853221, guid: 70d35ee3c475b444dab68ab5fde1da54, type: 3}
+  goalPrefab: {fileID: 3718992223569632111, guid: f8192a063811aa241964c23d51222a92, type: 3}
+  movingPlatformPrefab: {fileID: 6237970574743875026, guid: 8ad60e79b13577540aa2501133170ffa, type: 3}
+  sparkBurstPrefab: {fileID: 108293619144054367, guid: a3442b9e0a835a343baa8d71d019ec40, type: 3}
+  dustPrefab: {fileID: 7268049950445980158, guid: e0ccfeaac913f6a40a17529235431e43, type: 3}
+  noFriction: {fileID: 6200000, guid: 8ac6d624847c95149bd774eabf3b126a, type: 2}

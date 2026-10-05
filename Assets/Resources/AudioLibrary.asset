@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6f3cb1f76b3094a92c5673c5e94a33, type: 3}
+  m_Name: AudioLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::Faisca.AudioLibrary
+  musicMenu: {fileID: 8300000, guid: 24af1e18cc2527f4bb1f8fe0f8842d3f, type: 3}
+  musicGame: {fileID: 8300000, guid: 9a891b7640afa7e4791622df39083c51, type: 3}
+  ambience: {fileID: 8300000, guid: c352b960434834243a7e26baa8bae37c, type: 3}
+  jump: {fileID: 8300000, guid: a87767296335abd498d4820406c6d0b7, type: 3}
+  land: {fileID: 8300000, guid: a3adc714ed033e94bb41f50ec9e13884, type: 3}
+  dash: {fileID: 8300000, guid: 54bf78a66f0219244bdd94e3960064cb, type: 3}
+  collect: {fileID: 8300000, guid: f7103336e3c846642a51e3c0d2f350b1, type: 3}
+  stomp: {fileID: 8300000, guid: 0866b51de1703e541a2a77bbcf04ebc5, type: 3}
+  hurt: {fileID: 8300000, guid: 1de4fe5d95c7a7441a8fd4f5fb43634f, type: 3}
+  checkpoint: {fileID: 8300000, guid: be1618a659968e346b798769f0e582e1, type: 3}
+  goal: {fileID: 8300000, guid: 28c49b4630261f34eb3339ab54c57dd7, type: 3}
+  levelComplete: {fileID: 8300000, guid: 857556b4617dd764a9256a188b025450, type: 3}
+  gameOver: {fileID: 8300000, guid: 97c54ac0eb764ec4aa0d641e819e3eb0, type: 3}
+  victory: {fileID: 8300000, guid: c65251410789c314db4db25af469bf7c, type: 3}
+  uiClick: {fileID: 8300000, guid: 43d6f446326a80444bd1072c7c0b1798, type: 3}
+  uiHover: {fileID: 8300000, guid: cc5768cbe04620d4ea0a175b2284aa18, type: 3}
+  denied: {fileID: 8300000, guid: 74f9350837957f043ad282ac65ef7c40, type: 3}
+  arc: {fileID: 8300000, guid: 36b38b9d6cf314e44865b40381db2838, type: 3}
