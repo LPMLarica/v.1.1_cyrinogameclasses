@@ -62,12 +62,12 @@ Cada etapa tem uma tag anotada (`git tag -n`):
 
 | Tag | Etapa | Data prevista |
 |---|---|---|
-| `v0.1` | Concepção e GDD inicial | 03/09 |
-| `v0.2` | Direção visual e level design | 10/09 |
-| `v0.3` | Protótipo jogável | 17/09 |
-| `v0.4` | Vertical slice | 24/09 |
-| `v0.5` | Beta / feature lock | 01/10 |
-| `v1.0` | Versão final | 08/10 |
+| `v0.1` | Concepção e GDD inicial | 05/10 |
+| `v0.2` | Direção visual e level design | 05/10 |
+| `v0.3` | Protótipo jogável | 05/10 |
+| `v0.4` | Vertical slice | 05/10 |
+| `v0.5` | Beta / feature lock | 05/10 |
+| `v1.0` | Versão final | 05/10 |
 
 Detalhes em [`CHANGELOG.md`](CHANGELOG.md). Requisitos do enunciado × evidências: [`Docs/Planejamento/ChecklistRequisitos.md`](Docs/Planejamento/ChecklistRequisitos.md).
 
