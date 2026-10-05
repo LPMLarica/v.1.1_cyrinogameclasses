@@ -932,9 +932,9 @@ namespace Faisca.EditorTools
             var cred = Panel(root, "CreditsPanel", new Vector2(980f, 560f), true);
             Label(cred, "Title", "Créditos", 40, TextAnchor.MiddleCenter, Yellow, true, new Vector2(0.5f, 1f), new Vector2(0f, -50f), new Vector2(900f, 60f));
             Label(cred, "Body",
-                "<b>FAÍSCA</b> — projeto-modelo de jogo 2D em Unity e C#\n\n" +
+                "<b>FAÍSCA</b> — projeto-faisca de jogo 2D em Unity e C#\n\n" +
                 "Game design, programação, arte, animação, level design e áudio:\n" +
-                "<color=#FFD23F>Equipe Faísca</color> (substitua pelos nomes dos integrantes)\n\n" +
+                "<color=#FFD23F>Equipe Faísca</color> Larissa Campos Cardoso\n\n" +
                 "Sprites, cenários, músicas e efeitos produzidos pela equipe\n(ferramentas na pasta Tools/ do repositório).\n\n" +
                 "<b>Recursos externos</b>\n" +
                 "Fonte Pixelify Sans — The Pixelify Sans Project Authors — SIL Open Font License 1.1\n" +
@@ -947,7 +947,7 @@ namespace Faisca.EditorTools
             menu.backButtons = new[] { backHow, backOpt, backCred };
             menu.bestTimeText = Label(root, "BestTime", "Melhor tempo: --:--", 20, TextAnchor.LowerLeft, Yellow, true,
                 new Vector2(0f, 0f), new Vector2(220f, 30f), new Vector2(400f, 30f));
-            Label(root, "Version", "v1.0 · projeto-modelo", 18, TextAnchor.LowerRight, TextColor, false,
+            Label(root, "Version", "v1.0 · projeto-faisca", 18, TextAnchor.LowerRight, TextColor, false,
                 new Vector2(1f, 0f), new Vector2(-170f, 30f), new Vector2(300f, 30f));
 
             how.parent.gameObject.SetActive(false);

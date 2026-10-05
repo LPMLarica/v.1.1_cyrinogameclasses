@@ -680,7 +680,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.1
-  m_Text: "<b>FA\xCDSCA</b> \u2014 projeto-modelo de jogo 2D em Unity e C#\n\nGame design, programa\xE7\xE3o, arte, anima\xE7\xE3o, level design e \xE1udio:\n<color=#FFD23F>Equipe Fa\xEDsca</color> (substitua pelos nomes dos integrantes)\n\nSprites, cen\xE1rios, m\xFAsicas e efeitos produzidos pela equipe\n(ferramentas na pasta Tools/ do reposit\xF3rio).\n\n<b>Recursos externos</b>\nFonte Pixelify Sans \u2014 The Pixelify Sans Project Authors \u2014 SIL Open Font License 1.1\nMotor: Unity \u2014 Unity Technologies\n\nObrigado por jogar!"
+  m_Text: "<b>FA\xCDSCA</b> \u2014 projeto-faisca de jogo 2D em Unity e C#\n\nGame design, programa\xE7\xE3o, arte, anima\xE7\xE3o, level design e \xE1udio:\n<color=#FFD23F>Equipe Fa\xEDsca</color> Larissa Campos Cardoso \n\nSprites, cen\xE1rios, m\xFAsicas e efeitos produzidos pela equipe\n(ferramentas na pasta Tools/ do reposit\xF3rio).\n\n<b>Recursos externos</b>\nFonte Pixelify Sans \u2014 The Pixelify Sans Project Authors \u2014 SIL Open Font License 1.1\nMotor: Unity \u2014 Unity Technologies\n\nObrigado por jogar!"
 --- !u!222 &645783820
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1599,7 +1599,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.1
-  m_Text: "v1.0 \xB7 projeto-modelo"
+  m_Text: "v1.0 \xB7 projeto-faisca"
 --- !u!222 &1001925719
 CanvasRenderer:
   m_ObjectHideFlags: 0
