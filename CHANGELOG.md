@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.0] — Versão final (08/10)
+## [v1.0] — Versão final (05/10)
 - README, créditos, checklist de requisitos e roteiro da apresentação.
 - Registro de bugs consolidado (`Docs/Testes/Bugs.md`): 9 corrigidos, 0 abertos conhecidos.
 - Checklist da build e da entrega no AVA.
