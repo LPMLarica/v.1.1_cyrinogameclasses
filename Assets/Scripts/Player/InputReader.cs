@@ -2,11 +2,7 @@ using UnityEngine;
 
 namespace Faisca
 {
-    /// <summary>
-    /// Ponto único de leitura de entrada (Input Manager clássico).
-    /// Centralizar aqui facilita trocar o sistema de input no futuro e
-    /// mapear teclado + controle ao mesmo tempo.
-    /// </summary>
+    /// <summary>Ponto único de leitura de entrada (Input Manager clássico). Centralizar aqui facilita trocar o sistema de input no futuro e mapear teclado + controle ao mesmo tempo.</summary>
     public static class InputReader
     {
         const float DeadZone = 0.35f;

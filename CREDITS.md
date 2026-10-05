@@ -3,12 +3,10 @@
 ## Equipe
 | Integrante | Papel |
 |---|---|
-| Integrante 1 | Produção e Game Design |
-| Integrante 2 | Programação |
-| Integrante 3 | Arte e Animação |
-| Integrante 4 | Level Design e Áudio |
-
-_(Projeto-modelo: substitua pelos nomes reais.)_
+| Larissa e Claude | Produção e Game Design |
+| Larissa | Programação |
+| Larissa | Arte e Animação |
+| Larissa | Level Design e Áudio |
 
 ## Produzido pela equipe
 - **Arte:** todos os sprites, tiles, fundos, ícones, logotipo, concept arts e model sheets (`Tools/gen_art.py`, `Tools/gen_docs_art.py`).

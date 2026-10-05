@@ -4,13 +4,10 @@
 
 **Faísca** é um jogo de plataforma 2D em *pixel art* feito em **Unity + C#**. Uma pequena centelha atravessa uma subestação às escuras, coleta células de energia e religa o transformador principal para devolver a luz à cidade.
 
-> **Projeto-modelo** da disciplina: mostra, de ponta a ponta, o que se espera de cada entrega (v0.1 → v1.0): jogo, documentação, arte, áudio, level design, testes e versionamento. Equipes podem usá-lo como referência de organização, não como código para copiar.
-
 ---
 
 ## Como abrir o projeto
 1. Instale a **Unity 6 LTS** (6000.0 ou mais recente) pelo Unity Hub, com o módulo de build da sua plataforma.
-   *Unity 2022.3 LTS também funciona: troque `"com.unity.ugui": "2.0.0"` por `"1.0.0"` em `Packages/manifest.json`.*
 2. Unity Hub ▸ **Add ▸ Add project from disk** ▸ selecione esta pasta.
 3. Na **primeira abertura**, a ferramenta `ProjectBootstrapper` roda sozinha e gera prefabs, animações, materiais, configurações e as cenas `MainMenu`, `Game` e `Ending` a partir dos assets versionados (leva alguns segundos).
 4. Abra `Assets/Scenes/MainMenu.unity` e aperte **Play**.
@@ -75,7 +72,7 @@ Cada etapa tem uma tag anotada (`git tag -n`):
 Detalhes em [`CHANGELOG.md`](CHANGELOG.md). Requisitos do enunciado × evidências: [`Docs/Planejamento/ChecklistRequisitos.md`](Docs/Planejamento/ChecklistRequisitos.md).
 
 ## Entrega da build
-Ver [`Docs/Testes/ChecklistBuild.md`](Docs/Testes/ChecklistBuild.md): gerar pelo menu, testar em outro computador e enviar **somente** a pasta da build no AVA (sem projeto, código ou assets).
+Ver [`Docs/Testes/ChecklistBuild.md`](Docs/Testes/ChecklistBuild.md): gerar pelo menu, testar em outro computador 
 
 ## Créditos
 Ver [`CREDITS.md`](CREDITS.md).

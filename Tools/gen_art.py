@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-FAÍSCA — gerador da arte do jogo (pixel art própria da equipe).
+FAÍSCA — gerador da arte do jogo, pixel art.
 
-Todos os sprites são desenhados aqui, pixel a pixel, a partir de uma paleta
+Todos os sprites são desenhados, pixel a pixel, a partir de uma paleta
 restrita. Rodar novamente regenera os PNGs em Assets/Art com o mesmo resultado
-(sementes fixas), o que deixa o histórico do Git limpo.
+(seeds fixas), o que deixa o histórico do Git limpo.
 
 Uso:  python3 Tools/gen_art.py
 Requer: Pillow
@@ -81,7 +81,7 @@ def bottom_align(img):
     return out
 
 
-# ------------------------------------------------------------ Faísca -------
+# Faísca 
 def draw_spark(size=16, cx=8.0, cy=10.0, rx=5.0, ry=5.0, phase=0.0,
                trail=None, trail_len=0, eyes="open", body="normal",
                n_flames=7, flame_len=2.2, streak=0):
@@ -93,14 +93,14 @@ def draw_spark(size=16, cx=8.0, cy=10.0, rx=5.0, ry=5.0, phase=0.0,
         if 0 <= x < size and 0 <= y < size:
             px[x, y] = rgba(ch)
 
-    # rastro do Pulso (atrás do corpo)
+    # rastro Pulso
     for i in range(streak):
         x = int(cx - rx - 1 - i)
         for yy, ch in ((int(cy) - 2, "c"), (int(cy), "C"), (int(cy) + 2, "c")):
             if (i + yy) % 2 == 0 or ch == "C":
                 put(x, yy, ch)
 
-    # chamas radiais
+    # chamas 
     rnd = random.Random(int(phase * 1000) + n_flames)
     for i in range(n_flames):
         a = (i / n_flames) * 2 * math.pi + phase
@@ -141,7 +141,7 @@ def draw_spark(size=16, cx=8.0, cy=10.0, rx=5.0, ry=5.0, phase=0.0,
                         ch = "o"
                 px[x, y] = rgba(ch)
 
-    # olhos (olhando para a direita)
+    # olhar 
     ex0 = int(cx + rx * 0.15)
     ey0 = int(cy - ry * 0.15)
     if eyes == "open":
@@ -165,7 +165,7 @@ def draw_spark(size=16, cx=8.0, cy=10.0, rx=5.0, ry=5.0, phase=0.0,
 
 def player_frames():
     F = {}
-    left = math.pi  # rastro para trás (personagem olha para a direita)
+    left = math.pi  # rastro para trás 
     F["idle"] = [
         draw_spark(cy=10.0, phase=0.0),
         draw_spark(cy=10.0, phase=0.45, flame_len=2.6),
@@ -199,7 +199,7 @@ def player_frames():
     return F
 
 
-# ------------------------------------------------------------- Curto -------
+# Curto Circuito
 CURTO_BODY = [
     "....kkkkkkk.....",
     "...kgGGggggkk...",
@@ -245,7 +245,7 @@ def enemy_frames():
     return {"walk": walk, "die": die}
 
 
-# ------------------------------------------------------------ Célula -------
+# Célula 
 CELL = [
     "...kk...",
     "..kGGk..",
@@ -281,7 +281,6 @@ def cell_frames():
     return frames
 
 
-# ------------------------------------------------------------- Tiles -------
 def ground_tile(mask, seed=7):
     """mask: bit0 = topo exposto, bit1 = esquerda exposta, bit2 = direita exposta."""
     rnd = random.Random(seed)
@@ -290,7 +289,7 @@ def ground_tile(mask, seed=7):
     for y in range(16):
         for x in range(16):
             px[x, y] = rgba("d")
-    # tijolos de concreto
+    # tijolos 
     for y in range(16):
         for x in range(16):
             row = y // 4
@@ -401,7 +400,7 @@ def arc_frames():
         for y in range(16):
             x = max(4, min(11, x + rnd.choice([-1, 0, 0, 1])))
             pts.append((x, y))
-        for (x, y) in pts:  # brilho externo
+        for (x, y) in pts:  # brililhin
             for dx in (-2, -1, 1, 2):
                 if 0 <= x + dx < 16 and rnd.random() < (0.9 if abs(dx) == 1 else 0.35):
                     px[x + dx, y] = rgba("c" if abs(dx) == 2 else "C", 200 if abs(dx) == 2 else 255)
@@ -458,18 +457,18 @@ def goal_frames():
     def base(sign_on, bushing, arcs=0, seed=0):
         img = new(32, 32)
         d = ImageDraw.Draw(img)
-        # corpo do transformador
+        # transformador
         d.rectangle([5, 13, 26, 30], fill=rgba("g"), outline=rgba("k"))
         for x in range(7, 26, 3):  # aletas
             d.line([(x, 15), (x, 28)], fill=rgba("d"))
         d.rectangle([3, 16, 5, 28], fill=rgba("d"), outline=rgba("k"))
         d.rectangle([26, 16, 28, 28], fill=rgba("d"), outline=rgba("k"))
         d.rectangle([4, 30, 27, 31], fill=rgba("D"))
-        # placa de aviso
+        # aviso
         tri = [(16, 17), (11, 26), (21, 26)]
         d.polygon(tri, fill=rgba("y" if sign_on else "d"), outline=rgba("k"))
         d.line([(16, 19), (15, 22), (17, 22), (16, 25)], fill=rgba("k"))
-        # buchas (isoladores)
+        # isolantes
         for bx in (9, 16, 23):
             for i, y in enumerate(range(5, 13, 2)):
                 d.line([(bx - 2, y), (bx + 2, y)], fill=rgba("w" if i % 2 == 0 else "G"))
@@ -518,7 +517,7 @@ def moving_platform():
     return img
 
 
-# ------------------------------------------------------- partículas / UI ----
+# partículas 
 def particles():
     spark = from_ascii([".w..", "wYw.", ".w..", "...."], 4, 4)
     spark = from_ascii(["..w...", ".wYw..", "wYYYw.", ".wYw..", "..w...", "......"], 6, 6)
@@ -570,7 +569,7 @@ def button_sprite():
     return img
 
 
-# fonte bitmap 5x7 própria (usada só no logotipo)
+# fonte bitmap 5x7 no logotipo
 FONT5 = {
     "F": ["#####", "#....", "#....", "####.", "#....", "#....", "#...."],
     "A": [".###.", "#...#", "#...#", "#####", "#...#", "#...#", "#...#"],
@@ -621,7 +620,7 @@ def logo():
     return img
 
 
-# --------------------------------------------------------- fundos ----------
+# background
 def bg_sky():
     W, H = 320, 180
     img = new(W, H)
@@ -635,7 +634,7 @@ def bg_sky():
         else:
             k = (t - 0.6) / 0.4
             c = tuple(int(mid[i] + (bot[i] - mid[i]) * k) for i in range(3))
-        # banding em degraus (estética pixel)
+        
         c = tuple((v // 6) * 6 for v in c)
         for x in range(W):
             px[x, y] = c + (255,)
@@ -763,7 +762,6 @@ def bg_city_lit():
     return img
 
 
-# ----------------------------------------------------------------- main ----
 def main():
     S = "Sprites"
     pf = player_frames()

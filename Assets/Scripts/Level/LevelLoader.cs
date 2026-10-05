@@ -7,7 +7,7 @@ namespace Faisca
     /// Constrói a fase a partir de um <see cref="LevelData"/>:
     ///  1) desenha os tiles num Tilemap;
     ///  2) cria colisores retangulares agrupados (evita "quinas fantasmas");
-    ///  3) instancia os prefabs (jogador, inimigos, células, perigos...).
+    ///  3) instancia os prefabs 
     /// </summary>
     public class LevelLoader : MonoBehaviour
     {
@@ -30,7 +30,6 @@ namespace Faisca
             return SpawnEntities(data, cfg);
         }
 
-        // ---------------------------------------------------------- tiles --
         void BuildTiles(LevelData data, GameConfig cfg)
         {
             var gridGo = new GameObject("Grid", typeof(Grid));
@@ -80,11 +79,8 @@ namespace Faisca
             return (up ? 0 : 1) | (left ? 0 : 2) | (right ? 0 : 4);
         }
 
-        // ------------------------------------------------------- colisores --
-        /// <summary>
-        /// Agrupa tiles sólidos em retângulos (guloso: estende na horizontal,
-        /// depois na vertical). Menos colisores = física mais estável e rápida.
-        /// </summary>
+        //  colisão
+        /// <summary>Agrupa tiles sólidos em retângulos (guloso: estende na horizontal, depois na vertical). Menos colisores = física mais estável e rápida.</summary>
         void BuildSolidColliders(LevelData data, GameConfig cfg)
         {
             var go = new GameObject("Solids");
@@ -165,7 +161,7 @@ namespace Faisca
             right.offset = new Vector2(data.width + 0.5f, h * 0.5f - 5f);
         }
 
-        // -------------------------------------------------------- entidades --
+        // entity
         PlayerController SpawnEntities(LevelData data, GameConfig cfg)
         {
             PlayerController player = null;

@@ -1,13 +1,11 @@
 # Equipe e papéis
 
-> Projeto-modelo: substitua "Integrante N" pelos nomes reais. Todos participam do playtest e da apresentação.
-
 | Integrante | Papel principal | Papel de apoio | Responsável por |
 |---|---|---|---|
-| Integrante 1 | Produção e Game Design | QA | GDD, cronograma, quadro de tarefas, condução dos playtests |
-| Integrante 2 | Programação | Ferramentas | `PlayerController`, `GameManager`, `LevelLoader`, build |
-| Integrante 3 | Arte e Animação | UI | paleta, sprites, model sheets, Animator, HUD |
-| Integrante 4 | Level Design e Áudio | Programação de gameplay | mapas das fases, músicas, efeitos, ambiência |
+| Larissa e Claude | Produção e Game Design | QA | GDD, cronograma, quadro de tarefas, condução dos playtests |
+| Mini Cardoso | Programação | Ferramentas | `PlayerController`, `GameManager`, `LevelLoader`, build |
+| Olha a Larissa de novo, e um tico de um formador de pixel arte | Arte e Animação | UI | paleta, sprites, model sheets, Animator, HUD |
+| Larissa 2 | Level Design e Áudio | Programação de gameplay | mapas das fases, músicas, efeitos, ambiência |
 
 ## Matriz RACI (resumida)
 | Entrega | Produção | Programação | Arte | Level/Áudio |

@@ -115,7 +115,7 @@ Detalhes, mapas e justificativas: `Docs/LevelDesign/LevelDesign.md`.
 - Parallax em 3 camadas: céu, torres de transmissão, equipamentos da subestação.
 
 ## 7. Animação
-| Objeto | Estados (Animator) |
+| Objeto | Estados |
 |---|---|
 | Faísca | Idle (4), Run (6), Jump (2), Fall (2), Dash (3), Hurt (2) |
 | Curto | Walk (4), Die (3) |
